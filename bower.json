@@ -1,0 +1,18 @@
+{
+  "name": "edlainezamora.github.io",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "edlainezamora <edlainetsz1@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/EdlaineZamora/edlainezamora.github.io",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
