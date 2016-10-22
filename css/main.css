@@ -140,9 +140,8 @@ a:hover {
   opacity: 0;
 }
 #hero-area {
-  background: url('../images/computador.jpg') no-repeat 50%;
   background-size: cover;
-  background-attachment: fixed;
+  background: url('../images/computador.jpg') no-repeat fixed 50% 50%;
   padding: 230px 0;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -194,9 +193,8 @@ a:hover {
   border-radius: 0;
 }
 #call-to-action {
-  background: #02bdd5;
   background-size: cover;
-  background-attachment: fixed;
+  background: #02bdd5 fixed;
   padding: 80px 0;
   text-align: center;
   position: relative;
@@ -390,7 +388,6 @@ figure figcaption p {
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
   margin: 0px 0px 15px;
   font-weight: 400;
 }
@@ -436,8 +433,7 @@ figure figcaption p {
   padding: 6px 12px;
   font-size: 13px;
   line-height: 1.428571429;
-  background-color: #fff;
-  background-image: none;
+  background: #fff none;
   border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -458,8 +454,7 @@ figure figcaption p {
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
-  background-color: #ffffff;
-  background-image: none;
+  background: #ffffff none;
   border: 1px solid #cccccc;
   box-shadow: none;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -1063,12 +1058,8 @@ article {
 .dropdown-menu > ul {
   list-style: none;
   padding: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-top: -5px;
-  background: #fff;
-  background-color: rgba(0, 0, 0, 0.95);
+  margin: -5px auto 0;
+  background: rgba(0, 0, 0, 0.95);
   box-shadow: 0 2px 0.09px rgba(0, 0, 0, 0.15);
 }
 .nav .open > a,
@@ -1084,4 +1075,8 @@ article {
   padding: 8px 0;
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+div.icon.back-transparent {
+  background: transparent;
 }
