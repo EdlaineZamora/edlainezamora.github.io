@@ -399,7 +399,7 @@ figure figcaption p {
 #feature .icon {
   text-decoration: none;
   color: #fff;
-  background-color: #02bdd5;
+  background-color: transparent;
   height: 100px;
   text-align: center;
   width: 100px;
