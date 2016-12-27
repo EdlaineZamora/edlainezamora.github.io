@@ -12,7 +12,6 @@ app.directive('experienceRow', function () {
             companyName: '@',
             functionName: '@',
             image: '@'
-
         }
     }
 
