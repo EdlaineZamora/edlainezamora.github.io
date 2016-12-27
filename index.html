@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" ng-app="site">
     <head>
         <!-- Basic Page Needs
         ================================================== -->
@@ -52,8 +52,12 @@
         <script src="js/jquery.fancybox.js"></script>
         <!-- template main js -->
         <script src="js/main.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controller/mainController.js"></script>
+        <script src="js/directive/experienceRowDirective.js"></script>
     </head>
-    <body>
+    <body ng-controller="MainController">
         <!--
         ==================================================
         Header Section Start
@@ -173,55 +177,19 @@
                         <h1 class="title wow fadeInDown" data-wow-delay=".3s">Experiências Profissionais</h1>
                         <p class="wow fadeInDown" data-wow-delay=".5s">
                             Minhas experiências profissionais sempre foram na área de tecnologia. No início, atuando como suporte a usuários
-                            e, depois, ingressando na área de desenvolvimento de softwares.
+                            e, depois, ingressando na área de desenvolvimento de softwares, aplicativos e testes automatizados.
                         </p>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                                <div class="img-wrapper">
-                                    <img src="images/experiencias/cheina.jpg" class="img-responsive" alt="this is a title" >
-                                </div>
-                                <figcaption>
-                                <h4>
-                                    Cheina Informática
-                                </h4>
-                                <p>
-                                    Técnica de suporte ao usuário de Software
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <div class="img-wrapper">
-                                    <img src="images/experiencias/tifire.jpg" class="img-responsive" alt="this is a title" >
-                                </div>
-                                <figcaption>
-                                <h4>
-                                    TiFire Sistemas
-                                </h4>
-                                <p>
-                                    Desenvolvedora de Software
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                                <div class="img-wrapper">
-                                    <img src="images/experiencias/db1.png" class="img-responsive" alt="" >
-                                </div>
-                                <figcaption>
-                                <h4>
-                                    DB1 Global Software (Atual)
-                                </h4>
-                                <p>
-                                    Desenvolvedora de Software
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
+                        <experience-row image="images/experiencias/cheina.jpg"
+                                        company-name="Cheina Informática"
+                                        function-name="Técnica de suporte ao usuário de Software"></experience-row>
+                        <experience-row image="images/experiencias/tifire.jpg"
+                                        company-name="TiFire Sistemas"
+                                        function-name="Desenvolvedora de Software"></experience-row>
+                        <experience-row image="images/experiencias/db1.png"
+                                        company-name="DB1 Global Software (Atual)"
+                                        function-name="Desenvolvedora de Software"></experience-row>
                     </div>
                 </div>
             </section> <!-- #works -->
