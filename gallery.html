@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" ng-app="site">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -31,12 +31,16 @@
         <script src="js/jquery.fancybox.js"></script>
         <script src="js/main.js"></script>
 
+
         <script src="jquery.js"></script>
 
-        <link rel="import" href="footer.html">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/directive/dirPagination.js"></script>
+        <script src="js/controller/galleryController.js"></script>
 
     </head>
-    <body>
+    <body ng-controller="GalleryController">
         <!--
         ==================================================
         Header Section Start
@@ -100,100 +104,23 @@
             </div>
             </section><!--/#Page header-->
             <section id="gallery" class="works">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-12">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-sm-4 col-xs-12" dir-paginate="event in events|filter:procurar|orderBy:sortKey:reverse|itemsPerPage:6">
                             <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                                 <div class="img-wrapper">
-                                    <img src="images/treinamentos/arquitetura-nas-nuvens.jpg" class="img-responsive" alt="" >
+                                    <img src="{{event.image}}" class="img-responsive" alt="" >
                                 </div>
                                 <figcaption>
-                                    <h4>Participação em treinamento</h4>
+                                    <h4>{{event.title}}</h4>
                                     <p>
-                                    Treinamento de Arquitetura nas nuvens realizado na DB1.
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                                <div class="img-wrapper">
-                                    <img src="images/treinamentos/gumga.jpg" class="img-responsive" alt="" >
-                                </div>
-                                <figcaption>
-                                    <h4>Participação em treinamento</h4>
-                                    <p>
-                                        Treinamento sobre Framework Gumga realizado na DB1.
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                                <div class="img-wrapper">
-                                    <img src="images/treinamentos/css.jpg" class="img-responsive" alt="" >
-                                </div>
-                                <figcaption>
-                                    <h4>Participação em treinamento</h4>
-                                    <p>
-                                        Treinamento sobre CSS Além do Básico realizado na DB1.
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                                <div class="img-wrapper">
-                                    <img src="images/treinamentos/express.jpg" class="img-responsive" alt="" >
-                                </div>
-                                <figcaption>
-                                    <h4>Participação em treinamento</h4>
-                                    <p>
-                                        Treinamento sobre Express realizado na DB1.
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                                <div class="img-wrapper">
-                                    <img src="images/treinamentos/angular.jpg" class="img-responsive" alt="" >
-                                </div>
-                                <figcaption>
-                                    <h4>Participação em treinamento</h4>
-                                    <p>
-                                        Treinamento sobre AngularJS realizado na DB1.
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                                <div class="img-wrapper">
-                                    <img src="images/treinamentos/prototipacaoJS.jpg" class="img-responsive" alt="" >
-                                </div>
-                                <figcaption>
-                                    <h4>Participação em treinamento</h4>
-                                    <p>
-                                        Treinamento sobre Prototipação em JavaScript realizado no Sicoob.
-                                    </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                                <div class="img-wrapper">
-                                    <img src="images/treinamentos/expressionLanguage3.jpg" class="img-responsive" alt="" >
-                                </div>
-                                <figcaption>
-                                    <h4>Participação em treinamento</h4>
-                                    <p>
-                                        Treinamento sobre Expression Language 3 realizado na DB1.
+                                        {{event.descryption}}
                                     </p>
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
+                    <dir-pagination-controls class="pull-right" max-size="5" boundary-links="true"></dir-pagination-controls>
                 </div>
             </section>
             <!--==================================================

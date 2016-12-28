@@ -1,4 +1,4 @@
 /**
  * Created by Edlaine on 27/12/16.
  */
-var app = angular.module('site', []);
+var app = angular.module('site', ['angularUtils.directives.dirPagination']);
