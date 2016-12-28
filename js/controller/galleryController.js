@@ -6,9 +6,93 @@ var app = angular.module('site');
 app.controller('GalleryController', function($scope) {
 
     $scope.events = [
+        {image: 'images/treinamentos/devgirls-anúncio.jpg',
+            title: 'Evento só para mulheres de TI',
+            descryption: 'Meetup DevGirls'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-maujor.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'Maujor'},
+
+        {image: 'images/treinamentos/curso-jmeter-realizacao.jpg',
+            title: 'Realização de curso',
+            descryption: 'Testes de Performance com JMeter'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-maujor.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'Maujor'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-9.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'Microserviços'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-8.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'CSS'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-7.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'Progressive WebApps'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-6.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'ReactJs'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-5.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'Desenvolvimento Híbrido para mobile e desktop'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-4.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'Como ser um bom dev front-end em 2017'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-3.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'Entidades persistentes inteligentes: DDD e JPA'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-2.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'DevOps e Containers'},
+
+        {image: 'images/treinamentos/dev-paraná-conference-1.jpg',
+            title: 'DevParaná Conference 2016',
+            descryption: 'DevOps e Containers'},
+
+        {image: 'images/treinamentos/hackathon-db1.jpg',
+            title: 'Hackathon de arduíno na DB1',
+            descryption: 'Desenvolvimento de um brinquedo educativo para o dia das crianças.'},
+
+        {image: 'images/treinamentos/hackathon-unimed.jpg',
+            title: 'Hackathon da Unimed',
+            descryption: 'Desenvolvimento de um aplicativo para melhorar a comunicação do cliente com a Unimed.'},
+
+        {image: 'images/treinamentos/jhipster.jpg',
+            title: 'Realização de Palestra na DB1',
+            descryption: 'Palestra: Desenvolvendo aplicações web com JHipster.'},
+
+        {image: 'images/treinamentos/palestra-tdc.jpg',
+            title: 'Realização de Palestra no TDC-SP 2016',
+            descryption: 'Palestra: Tomada de decisão baseada em testes de carga.'},
+
+        {image: 'images/treinamentos/sala-palestrante-tdc.jpg',
+            title: 'Sala de Palestrante - TDC-SP 2016',
+            descryption: 'Palestra: Tomada de decisão baseada em testes de carga.'},
+
+        {image: 'images/treinamentos/anúncio-palestra-tdc-2016.jpg',
+            title: 'Anúncio de Palestra no TDC-SP 2016',
+            descryption: 'Palestra: Tomada de decisão baseada em testes de carga.'},
+
         {image: 'images/treinamentos/arquitetura-nas-nuvens.jpg',
          title: 'Participação em treinamento',
          descryption: 'Treinamento de Arquitetura nas nuvens realizado na DB1.'},
+
+        {image: 'images/treinamentos/metodologias-ágeis.jpg',
+            title: 'Participação em treinamento',
+            descryption: 'Treinamento sobre Metodologias Ágeis.'},
+
+        {image: 'images/treinamentos/nodejs.jpg',
+            title: 'Participação em treinamento',
+            descryption: 'Treinamento sobre NodeJs realizado na DB1.'},
 
         {image: 'images/treinamentos/gumga.jpg',
             title: 'Participação em treinamento',

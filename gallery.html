@@ -109,7 +109,7 @@
                         <div class="col-sm-4 col-xs-12" dir-paginate="event in events|filter:procurar|orderBy:sortKey:reverse|itemsPerPage:6">
                             <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                                 <div class="img-wrapper">
-                                    <img src="{{event.image}}" class="img-responsive" alt="" >
+                                    <img src="{{event.image}}" class="img-responsive" alt="" style="max-width: 400px; max-height: 350px; min-height: 350px;">
                                 </div>
                                 <figcaption>
                                     <h4>{{event.title}}</h4>
