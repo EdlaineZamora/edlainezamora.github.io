@@ -8,19 +8,15 @@ app.controller('GalleryController', function($scope) {
     $scope.events = [
         {image: 'images/treinamentos/devgirls-anúncio.jpg',
             title: 'Evento só para mulheres de TI',
-            descryption: 'Meetup DevGirls'},
-
-        {image: 'images/treinamentos/dev-paraná-conference-maujor.jpg',
-            title: 'DevParaná Conference 2016',
-            descryption: 'Maujor'},
+            descryption: 'Organização de um Meetup só para mulheres da área de TI: DevGirls'},
 
         {image: 'images/treinamentos/curso-jmeter-realizacao.jpg',
             title: 'Realização de curso',
-            descryption: 'Testes de Performance com JMeter'},
+            descryption: 'Ministrado o curso de Testes de Performance com JMeter na FCV-Maringá'},
 
         {image: 'images/treinamentos/dev-paraná-conference-maujor.jpg',
             title: 'DevParaná Conference 2016',
-            descryption: 'Maujor'},
+            descryption: 'Maurício Samy Silva: Maujor, o dinossauro das CSS'},
 
         {image: 'images/treinamentos/dev-paraná-conference-9.jpg',
             title: 'DevParaná Conference 2016',
@@ -84,7 +80,7 @@ app.controller('GalleryController', function($scope) {
 
         {image: 'images/treinamentos/arquitetura-nas-nuvens.jpg',
          title: 'Participação em treinamento',
-         descryption: 'Treinamento de Arquitetura nas nuvens realizado na DB1.'},
+         descryption: 'Treinamento de Arquitetura nas nuvens na DB1.'},
 
         {image: 'images/treinamentos/metodologias-ágeis.jpg',
             title: 'Participação em treinamento',
