@@ -58,11 +58,11 @@ app.controller('GalleryController', function($scope) {
             title: 'Hackathon de arduíno na DB1',
             descryption: 'Desenvolvimento de um brinquedo educativo para o dia das crianças.'},
 
-        {image: 'images/treinamentos/hackathon-unimed.jpg',
+        {image: 'images/treinamentos/hackathon-unimed.JPG',
             title: 'Hackathon da Unimed',
             descryption: 'Desenvolvimento de um aplicativo para melhorar a comunicação do cliente com a Unimed.'},
 
-        {image: 'images/treinamentos/jhipster.jpg',
+        {image: 'images/treinamentos/jhipster.JPG',
             title: 'Realização de Palestra na DB1',
             descryption: 'Palestra: Desenvolvendo aplicações web com JHipster.'},
 
