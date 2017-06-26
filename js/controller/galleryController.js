@@ -3,6 +3,10 @@ var app = angular.module('site');
 app.controller('GalleryController', function($scope) {
 
     $scope.events = [
+        {image: 'images/treinamentos/node-girls-11-06.jpg',
+            title: 'Participação como Treinadora no evento Node Girls em Belo Horizonte - 11/06/2017',
+            descryption: 'O evento tem como objetivo ensinar mulheres que tiveram ou não acesso a tecnologia.'},
+
         {image: 'images/treinamentos/django-girls-27-05.jpg',
             title: 'Participação como Treinadora no evento Django Girls em Belo Horizonte - 27/05/2017',
             descryption: 'O evento tem como objetivo ensinar mulheres que tiveram ou não acesso a tecnologia.'},
