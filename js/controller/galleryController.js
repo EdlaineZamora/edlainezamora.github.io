@@ -6,6 +6,30 @@ var app = angular.module('site');
 app.controller('GalleryController', function($scope) {
 
     $scope.events = [
+        {image: 'images/treinamentos/palestra-qa-ninja-conference-24-04.jpg',
+            title: 'Palestra Realizada no QA Ninja Conference - Evento online e gratuito - 24/02/2017',
+            descryption: 'Palestra realizada sobre como analisar vulnerabilidades de uma aplicação web com Kali Linux.'},
+
+        {image: 'images/treinamentos/hackathon-hotmart-camila-achutti.jpg',
+            title: 'Participação especial de Camila Achutti no Hackathon da Empresa Hotmart em Belo Horizonte - 01/04-2017',
+            descryption: 'Influente em igualdade de gêneros no mercado da tecnologia da informação, ela está à frente do Mastertech e Mulheres na Computação.'},
+
+        {image: 'images/treinamentos/hackathon-hotmart-01-04.jpg',
+            title: 'Hackathon da Empresa Hotmart em Belo Horizonte - 01/04-2017',
+            descryption: 'Participação no Hackathon da Hotmart. O evento tinha como objetivo a construção colaborativa de uma aplicação que ajuda na inclusão de mulheres em empresas de TI.'},
+
+        {image: 'images/treinamentos/devgirls-palestra-sobre-microsoft-xamarin-18-02.jpg',
+            title: 'Palestra Realizada no DevGirls - Evento só para mulheres de TI',
+            descryption: 'Palestra realizada sobre como criar aplicativos nativos com Microsoft Xamarin.'},
+
+        {image: 'images/treinamentos/devgirls-18-02.jpg',
+            title: 'Evento só para mulheres de TI - 18/02/2017',
+            descryption: 'Evento que participei da Organização. Um Meetup só para mulheres da área de TI: DevGirls'},
+
+        {image: 'images/treinamentos/conversa-sobre-metodologia-agil-21-01.jpg',
+            title: 'Conversa sobre Manifesto Ágil',
+            descryption: 'Um grupo se juntou na praça para conversar sobre o manifesto ágil.'},
+
         {image: 'images/treinamentos/devgirls-anúncio.jpg',
             title: 'Evento só para mulheres de TI',
             descryption: 'Organização de um Meetup só para mulheres da área de TI: DevGirls'},
