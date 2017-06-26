@@ -1,11 +1,28 @@
-/**
- * Created by Edlaine on 27/12/16.
- */
 var app = angular.module('site');
 
 app.controller('GalleryController', function($scope) {
 
     $scope.events = [
+        {image: 'images/treinamentos/django-girls-27-05.jpg',
+            title: 'Participação como Treinadora no evento Django Girls em Belo Horizonte - 27/05/2017',
+            descryption: 'O evento tem como objetivo ensinar mulheres que tiveram ou não acesso a tecnologia.'},
+
+        {image: 'images/treinamentos/django-girls-treinadora-27-05.jpg',
+            title: 'Participação como Treinadora no evento Django Girls em Belo Horizonte - 27/05/2017',
+            descryption: 'O evento tem como objetivo ensinar mulheres que tiveram ou não acesso a tecnologia.'},
+
+        {image: 'images/treinamentos/tdc-floripa-2017-jhipster.jpg',
+            title: 'Palestra Realizada no The Developers Conference - 06/05/2017',
+            descryption: 'Palestra realizada sobre o gerador de código JHipster na trilha de Java.'},
+
+        {image: 'images/treinamentos/tdc-floripa-2017-performance.jpg',
+            title: 'Palestra Realizada no The Developers Conference - 05/05/2017',
+            descryption: 'Palestra realizada sobre Testes de Performance na trilha de Testes.'},
+
+        {image: 'images/treinamentos/tdc-floripa-2017-testes-performance.jpg',
+            title: 'Palestra Realizada no The Developers Conference - 05/05/2017',
+            descryption: 'Palestra realizada sobre Testes de Performance na trilha de Testes.'},
+
         {image: 'images/treinamentos/palestra-qa-ninja-conference-24-04.jpg',
             title: 'Palestra Realizada no QA Ninja Conference - Evento online e gratuito - 24/02/2017',
             descryption: 'Palestra realizada sobre como analisar vulnerabilidades de uma aplicação web com Kali Linux.'},
